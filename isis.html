@@ -7,50 +7,36 @@
     body, html {
       margin: 0;
       padding: 0;
+      width: 100%;
       height: 100%;
+      background: #000; /* bordas pretas */
       font-family: 'Comic Sans MS', cursive, sans-serif;
     }
-    .container {
+    .convite {
       position: relative;
-      width: 100%;
-      height: 100vh;
+      width: 1080px;
+      height: 1920px;
+      margin: 0 auto;
       background: url("imagens/isis.png") no-repeat left center;
       background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
       color: #fff;
       text-shadow: 1px 1px 3px #000;
     }
-    .content {
-      position: relative;
-      width: 50%;
-      padding: 20px;
-      background: rgba(255, 192, 203, 0.6); /* leve rosa translúcido */
+    .conteudo {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      width: 45%;
+      background: rgba(255, 192, 203, 0.7);
       border-radius: 20px;
+      padding: 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 2.5em;
-      margin: 0;
-      color: #fff;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin: 10px 0;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.4em;
-    }
-    .date-time {
-      font-size: 1.3em;
-      margin: 15px 0;
-      font-weight: bold;
-    }
-    .buttons {
-      margin-top: 20px;
-    }
+    h1 { font-size: 2.8em; margin: 0; }
+    h2 { font-size: 2em; margin: 10px 0; }
+    p { font-size: 1.2em; line-height: 1.4em; }
+    .date-time { font-size: 1.4em; margin: 15px 0; font-weight: bold; }
+    .buttons { margin-top: 20px; }
     .btn {
       display: inline-block;
       margin: 8px;
@@ -62,15 +48,23 @@
       font-size: 1em;
       transition: transform 0.2s ease;
     }
-    .btn:hover {
-      transform: scale(1.05);
-      background: #f50057;
+    .btn:hover { transform: scale(1.05); background: #f50057; }
+    .footer {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      width: 45%;
+      text-align: center;
+      font-size: 1.2em;
+      background: rgba(255, 192, 203, 0.7);
+      border-radius: 20px;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="content">
+  <div class="convite">
+    <div class="conteudo">
       <h1>Ísis Maria</h1>
       <h2>1 aninho 🎀</h2>
       <p>
@@ -86,6 +80,10 @@
         <a class="btn" href="https://forms.cloud.microsoft/r/ufVD6STkZc" target="_blank">Confirmação</a>
         <a class="btn" href="presente.html">Presentes</a>
       </div>
+    </div>
+    <div class="footer">
+      Com carinho, esperamos você<br>
+      para viver esse momento inesquecível!
     </div>
   </div>
 </body>
