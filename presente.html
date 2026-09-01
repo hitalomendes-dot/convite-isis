@@ -2,46 +2,39 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Presentes - Ísis Maria</title>
+  <title>Sugestão de Presente - Ísis Maria</title>
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background: #000;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      overflow: hidden;
     }
-    .convite {
+    .container {
+      position: relative;
       width: 1080px;
       height: 1920px;
       margin: 0 auto;
-      background: linear-gradient(to bottom, #ffe6f0, #fff);
-      text-align: center;
-      padding: 40px 20px;
+      background: url("imagens/presentes.png") no-repeat center center;
+      background-size: contain;
     }
-    h1 { font-size: 2.5em; color: #e91e63; margin-bottom: 20px; }
-    ul { list-style: none; padding: 0; font-size: 1.3em; line-height: 2em; }
-    li::before { content: "🍓 "; }
-    a.btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #ff4081;
-      color: #fff;
-      border-radius: 25px;
-      text-decoration: none;
-      font-size: 1em;
+    .btn-voltar {
+      position: absolute;
+      width: 400px;
+      height: 100px;
+      top: 1650px;
+      left: 340px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
     }
-    a.btn:hover { background: #f50057; }
   </style>
 </head>
 <body>
-  <div class="convite">
-    <h1>Sugestão de Presente 🎁</h1>
-    <ul>
-      <li>Roupa tamanho 2 anos</li>
-      <li>Sapatinho tamanho 22 a 26</li>
-      <li>Brinquedos educativos</li>
-    </ul>
-    <a class="btn" href="isis.html">Voltar ao Convite</a>
+  <div class="container">
+    <a class="btn-voltar" href="isis.html"></a>
   </div>
 </body>
 </html>
